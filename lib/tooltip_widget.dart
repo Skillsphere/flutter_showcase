@@ -89,10 +89,16 @@ class _ToolTipWidgetState extends State<ToolTipWidget> {
   double _getTooltipWidth() {
     double titleLength = widget.title == null ? 0 : widget.title.length * 10.0;
     double descriptionLength = widget.description.length * 7.0;
+    double tooltipWidth;
     if (titleLength > descriptionLength) {
-      return titleLength + 10;
+      tooltipWidth = titleLength;
     } else {
-      return descriptionLength + 10;
+      tooltipWidth = descriptionLength;
+    }
+    if(tooltipWidth > (widget.screenSize.width - 80)) {
+      return widget.screenSize.width-80;
+    } else {
+      return tooltipWidth;
     }
   }
 
