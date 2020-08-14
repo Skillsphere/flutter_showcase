@@ -1,3 +1,6 @@
+
+[![pub](https://img.shields.io/badge/pub-0.1.5-red.svg)](https://pub.dev/packages/showcaseview)
+
 # ShowCaseView
 
 A Flutter package allows you to Showcase/Highlight your widgets step by step.
@@ -113,7 +116,7 @@ WidgetsBinding.instance.addPostFrameCallback((_) =>
 
 
 ## How to use
-Check out the **example** app in the [example](example) directory or the 'Example' tab on pub.dev for a more complete example.
+Check out the **example** app in the [example](example) directory or the 'Example' tab on pub.dartlang.org for a more complete example.
 
 
 ## Getting Started
